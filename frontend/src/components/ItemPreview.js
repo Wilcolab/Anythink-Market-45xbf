@@ -36,7 +36,12 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
+        // How to get the image from public folder when it is public (reserved keyword?)
         src={item.image}
+        // onError={event => {
+        //   event.target.src = "public/placeholder.png";
+        //   event.onerror = null
+        // }}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
